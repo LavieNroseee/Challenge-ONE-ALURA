@@ -62,7 +62,7 @@ function validateText() {
   }
 
   const regex =
-    /[W]|[áéíóúÁÉÍÓÚÑ¿¡«»“”‘’'"´`+*()\-–—/\\=|#@^\[\]{}%$§&~;,.:<>!?]|[A-Z]/g;
+    /[W]|[áéíóúÁÉÍÓÚÑ¿¡«»“”‘’'"´`+*()\-–—/\\=|#@^\[\]{}%$§&~;,.:<>!?]|[A-Z0-9_]/g;
   const cleanedText = inptTextArea.value.replace(regex, '');
   inptTextArea.value = cleanedText;
 }
